@@ -75,6 +75,7 @@
 			// Events.
 				$this
 					.on('click', function(event) {
+						window.alert("Are you sure?") // new 
 						event.stopPropagation();
 					})
 					.on('---toggle', function() {
@@ -143,7 +144,7 @@
 			$window
 				.on('keyup', function(event) {
 
-					if (event.keyCode == 32
+					if (event.keyCode == 27
 					&&	$body.hasClass('content-active')) {
 
 						event.preventDefault();
